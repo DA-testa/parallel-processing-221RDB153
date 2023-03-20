@@ -2,7 +2,7 @@
 
 def parallel_processing(n, m, data):
     output = []
-    jobs =[(data[i], i) for i in range(n)]
+    jobs =[(data[i], i) for i in range(m)]
     threads = [0]*n
     for job in jobs:
         thread = threads.index(min(threads))
